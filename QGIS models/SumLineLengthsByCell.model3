@@ -1,0 +1,299 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:rasterize_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="gdal:rasterize" type="QString"/>
+      <Option name="component_description" value="Rasterize (vector to raster)" type="QString"/>
+      <Option name="component_pos_x" value="568.2430245387918" type="double"/>
+      <Option name="component_pos_y" value="467.13083829452876" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="gdal:rasterize_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="BURN" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="double"/>
+          </Option>
+        </Option>
+        <Option name="DATA_TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="5" type="int"/>
+          </Option>
+        </Option>
+        <Option name="EXTENT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:sumlinelengths_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="FIELD" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="NewLengthFieldName" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="HEIGHT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="double"/>
+          </Option>
+        </Option>
+        <Option name="INIT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="qgis:sumlinelengths_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+        <Option name="INVERT" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="false" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="NODATA" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="double"/>
+          </Option>
+        </Option>
+        <Option name="OPTIONS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="UNITS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="WIDTH" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="double"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:creategrid_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="native:creategrid" type="QString"/>
+      <Option name="component_description" value="Create grid" type="QString"/>
+      <Option name="component_pos_x" value="175" type="double"/>
+      <Option name="component_pos_y" value="275.5" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="native:creategrid_1" type="QString"/>
+      <Option name="outputs"/>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="CRS" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="ProjectCrs" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="EXTENT" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="acto" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="HOVERLAY" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="double"/>
+          </Option>
+        </Option>
+        <Option name="HSPACING" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="n" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="TYPE" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="2" type="int"/>
+          </Option>
+        </Option>
+        <Option name="VOVERLAY" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="0" type="double"/>
+          </Option>
+        </Option>
+        <Option name="VSPACING" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="n" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="qgis:sumlinelengths_1" type="Map">
+      <Option name="active" value="true" type="bool"/>
+      <Option name="alg_config"/>
+      <Option name="alg_id" value="qgis:sumlinelengths" type="QString"/>
+      <Option name="component_description" value="Sum line lengths" type="QString"/>
+      <Option name="component_pos_x" value="175.5" type="double"/>
+      <Option name="component_pos_y" value="503" type="double"/>
+      <Option name="dependencies"/>
+      <Option name="id" value="qgis:sumlinelengths_1" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="ResultGrid" type="Map">
+          <Option name="child_id" value="qgis:sumlinelengths_1" type="QString"/>
+          <Option name="component_description" value="ResultGrid" type="QString"/>
+          <Option name="component_pos_x" value="375.5" type="double"/>
+          <Option name="component_pos_y" value="548" type="double"/>
+          <Option name="default_value" type="Map">
+            <Option name="class" value="QgsProcessingOutputLayerDefinition" type="QString"/>
+            <Option name="create_options" type="Map">
+              <Option name="fileEncoding" value="System" type="QString"/>
+            </Option>
+            <Option name="sink" type="Map">
+              <Option name="active" value="true" type="bool"/>
+              <Option name="type" value="1" type="int"/>
+              <Option name="val" value="/home/dimitrisk/.local/share/QGIS/QGIS3/profiles/default/processing/outputs/ResultGrid" type="QString"/>
+            </Option>
+          </Option>
+          <Option name="mandatory" value="true" type="bool"/>
+          <Option name="name" value="ResultGrid" type="QString"/>
+          <Option name="output_name" value="OUTPUT" type="QString"/>
+        </Option>
+      </Option>
+      <Option name="outputs_collapsed" value="true" type="bool"/>
+      <Option name="parameters_collapsed" value="true" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="COUNT_FIELD" type="List">
+          <Option type="Map">
+            <Option name="source" value="2" type="int"/>
+            <Option name="static_value" value="COUNT" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="LEN_FIELD" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="NewLengthFieldName" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="LINES" type="List">
+          <Option type="Map">
+            <Option name="parameter_name" value="lines" type="QString"/>
+            <Option name="source" value="0" type="int"/>
+          </Option>
+        </Option>
+        <Option name="POLYGONS" type="List">
+          <Option type="Map">
+            <Option name="child_id" value="native:creategrid_1" type="QString"/>
+            <Option name="output_name" value="OUTPUT" type="QString"/>
+            <Option name="source" value="1" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="help" type="Map">
+    <Option name="ALG_DESC" value="Calculate lines length in a grid.&#xa;&#xa;Dimitris Kavroudakis&#xa;www.dimitrisk.gr&#xa;dimitrisk@aegean.gr&#xa;" type="QString"/>
+  </Option>
+  <Option name="modelVariables"/>
+  <Option name="model_group" value="[Dimitris]" type="QString"/>
+  <Option name="model_name" value="Sum Line Lengths by Cell" type="QString"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="NewLengthFieldName" type="Map">
+      <Option name="default" value="LENGTH" type="QString"/>
+      <Option name="description" value="NewLengthFieldName" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="multiline" value="false" type="bool"/>
+      <Option name="name" value="NewLengthFieldName" type="QString"/>
+      <Option name="parameter_type" value="string" type="QString"/>
+    </Option>
+    <Option name="acto" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Acto" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="acto" type="QString"/>
+      <Option name="parameter_type" value="vector" type="QString"/>
+    </Option>
+    <Option name="lines" type="Map">
+      <Option name="data_types" type="List">
+        <Option value="1" type="int"/>
+      </Option>
+      <Option name="default" type="invalid"/>
+      <Option name="description" value="Lines" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="lines" type="QString"/>
+      <Option name="parameter_type" value="vector" type="QString"/>
+    </Option>
+    <Option name="n" type="Map">
+      <Option name="data_type" value="0" type="int"/>
+      <Option name="default" value="500" type="QString"/>
+      <Option name="description" value="n" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="max" value="1000" type="double"/>
+      <Option name="metadata"/>
+      <Option name="min" value="100" type="double"/>
+      <Option name="name" value="n" type="QString"/>
+      <Option name="parameter_type" value="number" type="QString"/>
+    </Option>
+    <Option name="qgis:sumlinelengths_1:ResultGrid" type="Map">
+      <Option name="create_by_default" value="true" type="bool"/>
+      <Option name="data_type" value="2" type="int"/>
+      <Option name="default"/>
+      <Option name="description" value="ResultGrid" type="QString"/>
+      <Option name="flags" value="0" type="int"/>
+      <Option name="metadata"/>
+      <Option name="name" value="qgis:sumlinelengths_1:ResultGrid" type="QString"/>
+      <Option name="parameter_type" value="sink" type="QString"/>
+      <Option name="supports_non_file_outputs" value="true" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameters" type="Map">
+    <Option name="NewLengthFieldName" type="Map">
+      <Option name="component_description" value="NewLengthFieldName" type="QString"/>
+      <Option name="component_pos_x" value="488.39797709867264" type="double"/>
+      <Option name="component_pos_y" value="388.03200625104625" type="double"/>
+      <Option name="name" value="NewLengthFieldName" type="QString"/>
+    </Option>
+    <Option name="acto" type="Map">
+      <Option name="component_description" value="acto" type="QString"/>
+      <Option name="component_pos_x" value="526.0818546288223" type="double"/>
+      <Option name="component_pos_y" value="257.44431183963644" type="double"/>
+      <Option name="name" value="acto" type="QString"/>
+    </Option>
+    <Option name="lines" type="Map">
+      <Option name="component_description" value="lines" type="QString"/>
+      <Option name="component_pos_x" value="144.5" type="double"/>
+      <Option name="component_pos_y" value="118.5" type="double"/>
+      <Option name="name" value="lines" type="QString"/>
+    </Option>
+    <Option name="n" type="Map">
+      <Option name="component_description" value="n" type="QString"/>
+      <Option name="component_pos_x" value="284.5" type="double"/>
+      <Option name="component_pos_y" value="187" type="double"/>
+      <Option name="name" value="n" type="QString"/>
+    </Option>
+  </Option>
+</Option>
