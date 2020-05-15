@@ -1,1 +1,0 @@
-Create Centroids QGIS plugin.
