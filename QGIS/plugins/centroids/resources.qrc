@@ -1,0 +1,6 @@
+<RCC> 
+  <qresource prefix="/plugins/centroids" > 
+    <file>icon.png</file> 
+  </qresource> 
+</RCC> 
+
