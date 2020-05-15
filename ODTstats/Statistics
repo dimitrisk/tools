@@ -1,0 +1,34 @@
+#!/usr/bin/python
+
+from Tkinter import *
+import os
+import os.path
+import commands
+
+
+def listifyResults(inString):
+	ola=[]
+	sectors=inString.split('\n')
+	for i in sectors:
+		if not (i.startswith('  ')):
+			ola.append('\n')
+			ola.append(i)
+		else:
+			ola.append(i.replace("  ",""))
+	return "\n".join(ola)
+
+
+f=commands.getoutput("echo $NAUTILUS_SCRIPT_SELECTED_FILE_PATHS")
+extension = os.path.splitext(f)[1]
+j="%s" % f
+comand= "style '"+ j +"'"
+
+if (extension=='.odt' or extension =='.doc'):
+	result=commands.getoutput(comand)
+	root= Tk()
+	#root.title('Results')
+	w=Label( root,text=listifyResults(result))
+	w.pack()
+	root.mainloop()
+else:
+	pass
