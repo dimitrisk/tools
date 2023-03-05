@@ -1,6 +1,6 @@
 # QGIS
 
-Various tools for working with QGIS software.
+Various tools for working with QGIS software. These include some QGIS-models and some plugins (python).
 
 ## Models
 
